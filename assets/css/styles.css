@@ -1,0 +1,499 @@
+body {
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     font-family: 'Oxanium', cursive;
+}
+
+ 
+
+/* =========== hero and banner ========= */
+
+.hero_section {
+     /* background: linear-gradient(180deg, #000000 50%, rgba(0, 0, 0, 0) 100%), url('../images/bg/banner.gif'); */
+     background-image: url(../images/minting/bg-color.png);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+}
+
+
+.hero_content h1 {
+    font-weight: 700;
+    font-size: 80px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(right, #9EFFE8, #0057FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+ 
+.hero_top {
+     padding: 50px 0px;
+     justify-content: space-between;
+     
+}
+
+.hero_top, .hero_top_left, .hero_top_right, .ico_list ul, .menu ul {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     align-items: center;
+}
+@media screen and (max-width:991px) {
+     .hero_top {
+          display: none;
+     }
+     .mobile_nenu {
+          background: #1e1e09;
+          position: absolute;
+          top: 95px;
+          left: -1000px;
+          width: 100%;
+          height: 100vh;
+          z-index: 99999;
+          transition: all .3s ease-in-out;
+      }
+     .open {
+          left: 0px;
+     }
+     .bars span {
+          width: 37px;
+          height: 2px;
+          display: block;
+          background: #fff;
+          margin-bottom: 8px;
+          
+     }
+     .bars span:first-child {
+          width: 20px;
+          margin: 0px 0px 10px 16px;   
+     }
+
+     .mobile_menu_header {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 37px;
+          align-items: center;
+          padding: 20px 30px;
+     }
+
+     .mobile_nenu .hero_top_left .menu ul {
+
+          flex-direction: column;
+     }
+     .menu ul li {
+          margin-bottom: 30px;
+     }
+     .menu ul li a {
+          padding: 0 !important;
+     }
+     .hero_top_right {
+          flex-direction: column;
+     }
+     .hero_top_left {
+          justify-content: center;
+      }
+     .walletbtn {
+          margin-right: 0px !important;
+          margin: 20px 0px 40px;
+     }
+     .mobile_logo {
+          margin: auto;
+          padding-left: 30px;
+     }
+     .hero_top_left {
+          padding-top: 70px;
+          
+     }
+     .hero_bottom {
+          padding: 58px 0px 0px 0px !important;
+      }
+
+      .button_group {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+      }
+      .btnone, .btntwo {
+          padding: 12px 26px;
+          font-size: 12px;
+      }
+
+@media screen and (max-width: 1199px) {
+     /* mine edit */
+     .hero_content h2 {
+          font-size: 72px;
+      }
+}
+
+}
+@media screen and (min-width:992px) {
+     .hero_content h2 {
+          font-size: 53px;
+          /* mine edit */
+      }
+
+     .mobile_menu_section {
+          display: none;
+     }
+}
+
+@media screen and (max-width: 767px) {
+     /* mine edit */
+     .hero_content h2 {
+          font-size: 39px;
+      }
+
+      .hero_content p {
+          font-size: 20px;
+      }
+}
+
+@media screen and (max-width:575px) {
+     .hero_content {
+          text-align: center;
+     }
+     .hero_content h1 {
+          font-size: 36px;
+     }
+     .hero_content h2 {
+          font-size: 22px !important;
+     }
+     .hero_content p {
+          font-size: 10px !important;
+     }
+    
+      .soluation_area {
+          text-align: center;
+      }
+      .soluation_item p {
+           font-size: 14px !important ;
+      }
+
+}
+
+
+.hero_top_right {
+     
+}
+
+.ico_list ul {
+     margin: 0;
+     padding: 0;
+}
+
+.ico_list ul li {
+     list-style: none;
+}
+
+.menu ul {
+     margin: 0;
+     padding: 0;
+     
+}
+
+.menu ul li {
+     list-style: none;
+}
+.menu ul li a {
+     font-weight: 500;
+     font-size: 16px;
+     text-transform: uppercase;
+     color: #fff;
+     text-decoration: none;
+     padding: 0px 46px 30px 0px;
+     transform: all .3s ease-in-out;
+}
+.menu ul li a:hover {
+     background: linear-gradient(258.65deg, #0F9FF2 41.64%, #01EFFF 71.45%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+
+
+.logo img {
+     margin-right: 100px;
+}
+
+ 
+.hero_bottom {
+     padding: 140px 0px 220px 0px;
+}
+
+.walletbtn {
+     border-width: 2px;
+     border-style: solid;
+     border-image: linear-gradient(to right, #0F9FF2, #0F4FF2) 1;
+     border-radius: 5px !important;
+     padding: 12px 20px;
+     margin-right: 50px;
+}
+.walletbtn a {
+     color: #fff; 
+     text-decoration: none;
+}
+ 
+.walletbtn span {
+     background: linear-gradient(258.65deg, #0F9FF2 41.64%, #01EFFF 71.45%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+ }
+
+.ico_list ul li a img {
+     margin-right: 15px;
+}
+.ico_list ul li:last-child{
+     margin-right: 0px;
+}
+
+.hero_content h2 {
+     font-weight: 700;
+     font-size: 80px;
+     color: #fff;
+}
+     
+.hero_content p {
+     color: #fff;
+     font-weight: 400;
+     font-size: 24px;
+     max-width: 820px;
+     margin: 13px 0px 16px 0px;
+}
+.btnone {
+     transition: all .5s ease-in-out;
+     margin-right: 10px;
+     padding: 18px 50px;
+     display: inline-block;
+     color: #fff;
+     text-decoration: none;
+     background: conic-gradient(from 180deg at 50% 50%, #0057FF 0deg, #1690E9 161.25deg, #0057FF 360deg);
+     border-radius: 3px;
+     border: 1px solid transparent;
+     transition: all .3 ease-in-out;
+ }
+ .btnone:hover {
+     color: #fff;
+ }
+ .button_group a img {
+      margin-right: 10px;
+ }
+ 
+ .btntwo {
+     border: 1px solid #fff;
+     padding: 18px 50px;
+     display: inline-block;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 3px;
+     transition: all .5s ease-in-out;
+ }
+ .btntwo:hover {
+     color: #0057FF;
+ }
+
+@media screen and (max-width: 423px) {
+     .btntwo {
+          padding: 14px 22px;
+          font-size: 10px;  
+      } 
+     .btnone {
+          padding: 15px 13px;
+          font-size: 10px;
+     }
+}
+
+/* mint section start here */
+.mint__header p {
+     display: inline-block;
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 20px;
+     color: #fff;
+     margin: 0 0 20px 40px;
+     position: relative;
+}
+
+.mint__header p::after {
+     position: absolute;
+     content: "";
+     left: -33px;
+     bottom: 0;
+     height: 2px;
+     width: 30px;
+     background-color: #fff;
+ }
+
+.mint__header .bold__header {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.mint__header .bold__header h1 {
+     font-size: 60px;
+     line-height: 75px;
+     color: #fff;
+     font-weight: bold;
+}
+
+.mint__header .bold__header button {
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 500;
+     padding: 13px 30px;
+     border-radius: 9px;
+     border-image: linear-gradient(to right, #0F9FF2, #0F4FF2) 1;
+     border-radius: 5px !important;
+     background: transparent;
+}
+
+.mint__header .bold__header button span {
+     background: linear-gradient(258.65deg, #0F9FF2 41.64%, #01EFFF 71.45%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.mint__photography {
+     margin-top: 118px;
+}
+
+.mint__photography .first__step {
+     margin-bottom: 65px;
+ }
+
+
+.mint__photography .image__section .image img {
+     width: 100%;
+     border-radius: 10px;
+     margin-bottom: 32px;
+}
+.image__title {
+     padding: 0px 15px;
+}
+
+.mint__photography .image__title h4 {
+     font-size: 20px;
+     line-height: 24px;
+     color: #fff;
+     font-weight: 600;
+}
+
+.mint__photography .image__title p {
+     font-size: 12px;
+     line-height: 20px;
+     color: #6B7280;
+}
+
+.mint__photography .price__rating .price {
+     display: flex;
+     align-items: center;
+}
+
+.mint__photography .price__rating .price p {
+     margin: 0;
+     padding-left: 10px;
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 600;
+     color: #fff;
+}
+
+
+
+.mint__photography .price__rating {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.mint__photography .price__rating .price.rating {
+     padding: 10px 14px;
+     background: conic-gradient(from 180deg at 50% 50%, #0057FF 0deg, #1690E9 161.25deg, #0057FF 360deg);
+     border-radius: 7px;
+     cursor: pointer;
+}
+
+.mint__photography .price__rating .price.rating img {
+     width: 16px;
+
+}
+
+     @media screen and (max-width: 991px) {
+          .mint__photography .first__step {
+               margin-bottom: 65px;
+           }
+          
+          .mint__photography .image__section{
+               padding-bottom: 20px;
+          }
+     }
+
+      @media screen and (max-width: 767px) {
+          .mint__header .bold__header h1 {
+               font-size: 40px;
+               line-height: 50px;
+           }
+
+           .mint__photography {
+               margin-top: 90px;
+           }
+
+           .mint__header p {
+               margin: 0 0 20px 20px;
+           }
+
+           .mint__header p::after {
+               position: absolute;
+               content: "";
+               left: -17px;
+               bottom: 0;
+               height: 20px;
+               width: 2px;
+               background-color: #fff;
+           }
+
+           .mint__header .bold__header button {
+               font-size: 16px;
+           }
+           
+      }
+
+
+@media screen and (max-width: 575px) {
+     .mint__header .bold__header h1 {
+          font-size: 34px;
+      }
+}
+
+@media screen and (max-width: 424px) {
+     .mint__header .bold__header h1 {
+          font-size: 30px;
+      }
+
+      .mint__header .bold__header button {
+          padding: 10px 15px;
+      }
+}
+
+@media screen and (max-width: 320px) {
+     .mint__header .bold__header h1 {
+          font-size: 25px;
+      }
+}
+
+
+
+/* mint section end here */
+
+/* ============= hero and banner ======== */
